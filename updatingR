@@ -1,0 +1,18 @@
+#Rterm.exe --vanilla
+
+
+if(!require(installr)) {
+  install.packages("installr"); 
+  require(installr)
+} #load / install+load installr
+updateR()
+
+########################to update all packages installed in older version of R###############
+# in old version of R
+tmp = installed.packages()
+installedpackages = as.vector(tmp[is.na(tmp[,"Priority"]), 1])
+save(installedpackages, file="C:/Users/4wald/Desktop/installed_packages.rda")
+
+#open new version of R
+load("C:/Users/4wald/Desktop/installed_packages.rda")
+for (count in 1:length(installedpackages)) install.packages(installedpackages[count])

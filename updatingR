@@ -12,6 +12,8 @@ updateR()
 tmp = installed.packages()
 installedpackages = as.vector(tmp[is.na(tmp[,"Priority"]), 1])
 save(installedpackages, file="C:/Users/4wald/Desktop/installed_packages.rda")
+#on Mandal Lab compute: save(installedpackages, file="C:/Users/jwaldr/Desktop/installed_packages.rda")
+
 
 #open new version of R
 load("C:/Users/4wald/Desktop/installed_packages.rda")

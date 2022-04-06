@@ -1,0 +1,7 @@
+
+
+# to dowload from the bucket to a local drive:
+
+# - n 3 option to prevent overwriting the content of existing files
+
+gsutil cp -n gs://gelccbamfiles/*.bam F:/GELCC.bam

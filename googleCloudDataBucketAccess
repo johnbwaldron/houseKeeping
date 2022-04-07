@@ -5,3 +5,7 @@
 # - n 3 option to prevent overwriting the content of existing files
 
 gsutil cp -n gs://gelccbamfiles/*.bam F:/GELCC.bam
+
+
+share a link to the bucket:
+https://console.cloud.google.com/storage/browser/gelcc_vcf/
